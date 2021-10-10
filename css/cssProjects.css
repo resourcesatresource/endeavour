@@ -489,7 +489,7 @@ table.menuFooterContainer tr th,td{
 
     /* CONTENT NAVIGATION */
     .contentNavigation{
-        height: 48px;
+        height: 96px;
     }
     .contentNavigation .navigationArray{
         font-size: 18px;
@@ -598,7 +598,7 @@ table.menuFooterContainer tr th,td{
 
     /* CONTENT NAVIGATION */
     .contentNavigation{
-        height: 32px;
+        height: 64px;
     }
     .contentNavigation .navigationArray{
         font-size: 12px;
@@ -709,7 +709,7 @@ table.menuFooterContainer tr th,td{
 
     /* CONTENT NAVIGATION */
     .contentNavigation{
-        height: 16px;
+        height: 32px;
     }
     .contentNavigation .navigationArray{
         width: 90%;
