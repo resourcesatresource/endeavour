@@ -1,0 +1,1043 @@
+@font-face {
+    font-family: Smile and Wave;
+    src: url(../fonts/smile_and_wave/smileandwave.ttf);
+}
+@font-face {
+    font-family: DESIGNER;
+    src: url(../fonts/designer/DESIGNER.otf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: poppins;
+    src: url(../fonts/Poppins/Poppins-Light.ttf);
+}
+
+/* FONT FACES ENDS */
+
+:root{
+    color:#444
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.topNav{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.topNav .emptySpace25{
+    width: 25%;
+    height: 100%;
+}
+.endeavourLogo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    padding: 0px 50px;
+}
+.endeavourLogo img{
+    width: 100%;
+    height: 100%;
+}
+.topNav ul{
+    list-style: none;
+}
+
+ul li{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: #A00000;
+
+
+}
+.navArray{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    line-height: 100px;
+
+}
+/*-- NAVIGATION --*/
+.intro{
+    width: 100%;
+    height: 1024px;
+    background: url(../images/introBackground.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.endeavourText{
+    font-family: Smile and Wave;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 74px;
+    text-align: center;
+    letter-spacing: 0.795em;
+    color: #FFFFFF;
+
+    margin-right: -0.795em;
+    text-align:right;
+} 
+.endeavourTagline{
+    font-family: DESIGNER;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.27em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    
+    margin-right: -0.27em;
+    text-align:right;
+}
+
+
+/* BLOG REFECENCE */
+
+section.blogReference{
+    width: 100%;
+    height: 128px;
+    background-color: #A00000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogReference .blogReferenceContainer{
+    width: 80%;
+    height: 50%;
+    display: flex;
+}
+.blogReferenceContainer .blogContainerText{
+    width: 60%;
+    height: 100%;
+    color: #FFFFFF;
+    
+}
+.blogContainerText p{
+    width: 100%;
+    height: 100%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+}
+.blogReferenceContainer .blogButtonContainer{
+width:40%;
+height: 100%;
+
+display: flex;
+justify-content: right;
+align-items: center;
+
+}
+.blogButtonContainer .blogButton{
+    width: 30%;
+    height: 60%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #FFFFFF;
+
+    /* My stuffs */
+    /* Buttons Only */
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.15), 0 6px 20px 0 rgba(0,0,0,0.14);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+/* BLOG REFECENCE */
+
+
+
+/* ABOUT REFERENCE */
+section.aboutReference{
+    width: 100%;
+    height: 384px;
+
+    background: linear-gradient(270deg, #000000 21.08%, rgba(0, 0, 0, 0) 54.17%), url(../images/grey-papert-texture.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    /* background: url(../images/about.png);
+    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+
+}
+
+/* DOMAIN REFERENCE */
+section.domainReference{
+    width: 100%;
+    height: calc(256px + 128px);
+    background: linear-gradient(89.74deg, #020402 32.84%, rgba(0, 0, 0, 0) 66.81%), url(../images/grey-papert-texture.png);
+    background-size: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    /* Might Delete */
+    box-sizing: border-box;
+    border-bottom: 0.5px solid #000;
+    
+}
+
+
+/* CARDS SECTION */
+
+section.cardsArray{
+    width: 100%;
+    height: 768px; /*Change*/
+    background-color: #aaa;
+    background: url(../images/grey-papert-texture.png);
+    background-size: cover;
+}
+.cardsArray .cardText{
+    width: 100%;
+    height: 20%;
+}
+.cardText p.cardMainText{
+    width: 100%;
+    height: 75%;
+
+    /* FONT STYLES */
+    font-family: Smile and Wave;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 55px;
+    text-align: center;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #CD0000;
+
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content: end;
+
+}
+.cardText .cardTagText{
+    width: 100%;
+    height: 25%;
+
+    /* FONT STYLE */
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    /* or 112% */
+
+    text-align: center;
+    color: #020402;
+
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content: end;
+}
+
+
+
+
+.cardsArray .cardContainer{
+    width: 100%;
+    height: 80%;
+    /* display: flex; */
+    /* overflow-x: auto; */
+}
+.cardContainer table.cardTable
+{
+    width: 100%;
+    height: 100%;
+}
+.cardTable tr{
+    width: 100%;
+    height: 100%;
+    
+}
+.cardTable tr td{
+    width: calc(100/3%);
+    height: 100%;
+    
+}
+/* .cardContainer td{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+/* .cardContainer::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+} */
+.card1{
+    height: 80%;
+    width: 80%;
+    background-color: #fff;
+    /* min-width: 250px; */
+    background-color: #444;
+    /* text-align: center; */
+    margin: auto;
+    border-radius: 10px;
+    background: url(../images/qqart1.jpg);
+    background-size: cover;
+    background-position-x: center;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.card1:hover{
+ width: 85%;
+ height: 85%;
+ transition: 0.5s ease;
+}
+
+
+.card2{
+    height: 80%;
+    width: 80%;
+    background-color: #fff;
+    /* min-width: 250px; */
+    background-color: #444;
+    /* text-align: center; */
+    margin: auto;
+    border-radius: 10px;
+    background: url(../images/best-nitro-rc-cars-02.jpg);
+    background-size: cover;
+    background-position-x: center;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card2:hover{
+    width: 85%;
+    height: 85%;
+    transition: 0.5s ease;
+}
+
+.card3{
+    height: 80%;
+    width: 80%;
+    background-color: #fff;
+    /* min-width: 250px; */
+    background-color: #444;
+    /* text-align: center; */
+    margin: auto;
+    border-radius: 10px;
+    background: url(../images/dji-mavic-mini.jpg);
+    background-size: cover;
+    background-position-x: center;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card3:hover{
+    width: 85%;
+    height: 85%;
+    transition: 0.5s ease;
+   }
+
+.card1 .partOne{
+    width: 100%;
+    height: 75%;
+}
+.card1 .partTwo{
+    width: 100%;
+    height: 25%;
+}
+
+.card2 .partOne{
+    width: 100%;
+    height: 75%;
+}
+.card2 .partTwo{
+    width: 100%;
+    height: 25%;
+}
+
+.card3 .partOne{
+    width: 100%;
+    height: 75%;
+}
+.card3 .partTwo{
+    width: 100%;
+    height: 25%;
+}
+.partTwo p{
+font-family: Smile and Wave;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 41px;
+text-align: center;
+width: 100%;
+height: 30%;
+}
+.partTwo .taglineCard{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+/* or 121% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+    width: 100%;
+    height: 30%;
+}
+.partTwo .buttonCardContainer{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonCardContainer .buttonCard{
+    width: 40%;
+    height: 80%;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* CARDS SECTION */
+
+/* OUR RESEARCH PROJECTS */
+section.researchReference{
+    width: 100%;
+    height: 384px;
+
+    display: flex;
+    flex-direction: row;
+
+    background: linear-gradient(89.74deg, #020402 32.84%, rgba(0, 0, 0, 0) 66.81%), url(../images/grey-papert-texture.png);
+    
+
+    /* Might Delete */
+    box-sizing: border-box;
+    border-top: 0.5px solid #000;
+}
+
+/* .researchReference .researchText{
+   width: 40%;
+   height: 100%;
+   
+}
+.researchReference .quadCamDrone{
+
+    width: 20%;
+    height: 100%;
+    background: url(../images/quadCamDrone.jpg);
+    background-size: 100% 100%;
+
+}
+.researchReference .warBot{
+    width: 20%;
+    height: 100%;
+    background: url(../images/quadCamDrone.jpg);
+    background-size: 100% 100%;
+}
+.researchReference .agriDrone{
+    width: 20%;
+    height: 100%;
+    background: url(../images/quadCamDrone.jpg);
+    background-size: 100% 100%;
+} */
+
+
+
+/* FOOTER SECTION */
+
+section.footer{
+    /* 0 */
+    width: 100%;
+    height: calc(256px + 160px);
+    background: #aaa;
+
+    display: flex;
+    
+}
+.footer .connectionFooter{
+    /* 0 */
+    width: 45%;
+    height: 100%;
+    background: #A00000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.connectionFooter .connectionFooterOne{
+    width: 50%;
+    height: 100%;
+
+}
+.connectionFooter .connectionFooterTwo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+.connectionFooterTwo .footerMainText{
+/* 1 */
+font-family: Smile and Wave;
+font-style: normal;
+font-weight: normal;
+font-size: 26px;
+line-height: 30px;
+letter-spacing: 0.1em;
+text-align: left;
+color: #FFFFFF;
+}
+
+.connectionFooterTwo .footerTagText{
+/* 1 */
+font-family: Poppins;
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 27px;
+color: #FFFFFF;
+}
+
+.connectionFooterTwo .footerSocialIcons{
+    /* Color For Icons */
+    color: #fff; 
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.footer .menuFooter{
+    width: 55%;
+    height: 100%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuFooter .menuFooterContainer{
+    width: 80%;
+    height: 60%;
+}
+table.menuFooterContainer tr{
+    width: 100%;
+    height: 20%;
+}
+tr td,th{
+    width: 25%;
+    height: 20%;
+    text-align: left;
+    font-family: Poppins;
+    font-style: normal;
+    color: #FFFFFF;
+    
+}
+/* FOOTER SECTION */
+
+
+
+
+@media only screen and (max-width:600px) {
+
+    /* ONE FOURTH */
+    /* NAV TEXT */
+    .topNav{
+        height: 25px;
+    }
+    .topNav ul li{
+        font-size: 6px;
+    }
+    .topNav .emptySpace25 .endeavourLogo{
+        width: 25px;
+        height: 25px;
+        padding: 0px 12.5px;
+    }
+    /*-- NAV TEXT --*/
+
+
+    /* INTRODUCTION */
+    
+    .intro{
+        height: 181.5px;
+    }
+    .endeavourText{
+        font-size: 16px;
+        line-height: 18.5px;
+
+        letter-spacing: 0.795em;
+    
+        margin-right: -0.795em;
+        text-align:right;
+    }
+    .endeavourTagline{
+        font-size: 9px;
+        line-height: 8px;
+    }
+    /*-- INTRODUCTION --*/
+
+
+
+
+    section.blogReference{
+        height: 32px;
+    }
+    .blogContainerText p{
+        font-size: 6px;
+        line-height: 7.25px;
+    }
+    .blogButtonContainer .blogButton{
+        font-size: 3.5px;
+    }
+
+    section.aboutReference{
+        height: 96px;
+    }
+
+    section.domainReference{
+        height: 96px;
+    }
+
+
+    /* CARDS */
+
+    section.cardsArray{
+        height: 192px;
+    }
+
+    .cardText p.cardMainText{
+        font-size: 12px;
+        line-height: 26.75px;
+    }
+    .cardText .cardTagText{
+        font-size: 4px;
+        line-height: 4.5px;
+    }
+
+    /* Temporary */
+    .card1, .card2, .card3{
+        width: 90%;
+        height: 70%;
+    }
+
+    .partTwo p{
+        font-size: 9px;
+        line-height: 10.25px;
+    }
+    .partTwo .taglineCard{
+        font-size: 3px;
+        line-height: 3.5px;
+    }
+    .buttonCardContainer .buttonCard{
+        font-size: 3px;
+    }
+
+
+    /* FOOTER */
+    section.footer{
+        height: 104px;
+    }
+    .connectionFooterTwo .footerMainText{
+        font-size: 6.5px;
+        line-height: 7.5px;
+    }
+    .connectionFooterTwo .footerTagText{
+        font-size: 4.5px;
+        line-height: 6.75px;
+    }
+    .connectionFooterTwo .footerSocialIcons{
+        font-size: 5px;
+    }
+    table.menuFooterContainer tr th,td{
+        font-size: 4.5px;
+        line-height: 6.75px;
+    }
+    /* FOOTER */
+    
+}
+
+@media only screen and (max-width:768px){
+     /* HALF  */
+
+    /* NAV TEXT */
+    .topNav{
+        height: 50px;
+    }
+    .topNav ul li{
+        font-size: 12px;
+    }
+    .topNav .emptySpace25 .endeavourLogo{
+        width: 50px;
+        height: 50px;
+        padding: 0px 25px;
+    }
+    /*-- NAV TEXT --*/
+
+
+    /* INTRODUCTION */
+    
+    .intro{
+        height: 363px;
+    }
+    .endeavourText{
+        font-size: 32px;
+        line-height: 37px;
+
+        letter-spacing: 0.795em;
+    
+        margin-right: -0.795em;
+        text-align:right;
+    }
+    .endeavourTagline{
+        font-size: 18px;
+        line-height: 16px;
+    }
+    /*-- INTRODUCTION --*/
+
+    section.blogReference{
+        height: 64px;
+    }
+    .blogContainerText p{
+        font-size: 12px;
+        line-height: 14.5px;
+    }
+    .blogButtonContainer .blogButton{
+        font-size: 7px;
+    }
+
+
+
+    section.aboutReference{
+        height: 192px;
+    }
+
+    section.domainReference{
+        height: 192px;
+    }
+
+    /* CARDS */
+
+    section.cardsArray{
+        height: 384px;
+    }
+
+    .cardText p.cardMainText{
+        font-size: 24px;
+        line-height: 27.5px;
+    }
+    .cardText .cardTagText{
+        font-size: 8px;
+        line-height: 9px;
+    }
+
+    .partTwo p{
+        font-size: 18px;
+        line-height: 20.5px;
+    }
+    .partTwo .taglineCard{
+        font-size: 6px;
+        line-height: 7px;
+    }
+    .buttonCardContainer .buttonCard{
+        font-size: 6px;
+    }
+
+    
+    /* FOOTER */
+    section.footer{
+        height: 208px;
+    }
+    .connectionFooterTwo .footerMainText{
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .connectionFooterTwo .footerTagText{
+        font-size: 9px;
+        line-height: 13.5px;
+    }
+    .connectionFooterTwo .footerSocialIcons{
+        font-size: 10px;
+    }
+    table.menuFooterContainer tr th,td{
+        font-size: 9px;
+        line-height: 13.5px;
+    }
+    /* FOOTER */
+    
+}
+
+/* @media only screen and (max-width:1000px){
+
+    .topNav ul li{
+        font-size: 18px;
+    }
+} */
+
+@media only screen and (max-width:500px){
+     /* 1/5 with font 20% height 25% */
+
+    /* NAV TEXT */
+    .topNav{
+        height: 25px;
+    }
+    .topNav ul li{
+        font-size: 4.8px;
+    }
+    .topNav .emptySpace25 .endeavourLogo{
+        width: 25px;
+        height: 25px;
+        padding: 0px 12.5px;
+    }
+    /*-- NAV TEXT --*/
+
+
+    /* INTRODUCTION */
+    
+    .intro{
+        height: 181.5px;
+    }
+    .endeavourText{
+        font-size: 12.8px;
+        line-height: 14.8px;
+    }
+    .endeavourTagline{
+        font-size: 7.2px;
+        line-height: 6.4px;
+    }
+    /*-- INTRODUCTION --*/
+
+    section.blogReference{
+        height: 32px;
+    }
+    .blogContainerText p{
+        font-size: 4.8px;
+        line-height: 5.8px;
+    }
+    .blogButtonContainer .blogButton{
+        font-size: 2.8px;
+        border-radius: 2.5px;
+    }
+
+
+
+    section.aboutReference{
+        height: 96px;
+    }
+
+    section.domainReference{
+        height: 96px;
+    }
+
+    /* CARDS */
+
+    section.cardsArray{
+        height: 192px;
+    }
+
+    .cardText p.cardMainText{
+        font-size: 9.6px;
+        line-height: 11px;
+    }
+    .cardText .cardTagText{
+        font-size: 3.2px;
+        line-height: 3.6px;
+    }
+
+    .partTwo p{
+        font-size: 7.2px;
+        line-height: 4.3px;
+    }
+    .partTwo .taglineCard{
+        font-size: 2.4px;
+        line-height: 2.8px;
+    }
+    .buttonCardContainer .buttonCard{
+        font-size: 2.4px;
+    }
+
+    section.researchReference{
+        height: 96px;
+    }
+
+    
+    /* FOOTER */
+    section.footer{
+        height: 104px;
+    }
+    .connectionFooterTwo .footerMainText{
+        font-size: 5.2px;
+        line-height: 6px;
+    }
+    .connectionFooterTwo .footerTagText{
+        font-size: 3.6px;
+        line-height: 10.8px;
+    }
+    .connectionFooterTwo .footerSocialIcons{
+        font-size: 4px;
+    }
+    table.menuFooterContainer tr th,td{
+        font-size: 3.6px;
+        line-height: 10.8px;
+    }
+    /* FOOTER */
+}
+
+@media only screen and (max-width:0px){
+    /* One fifth  */
+
+   /* NAV TEXT */
+   .topNav{
+       height: 20px;
+   }
+   .topNav ul li{
+       font-size: 4.8px;
+   }
+   .topNav .emptySpace25 .endeavourLogo{
+       width: 20px;
+       height: 20px;
+       padding: 0px 10px;
+   }
+   /*-- NAV TEXT --*/
+
+
+   /* INTRODUCTION */
+   
+   .intro{
+       height: 145.5px;
+   }
+   .endeavourText{
+       font-size: 12.8px;
+       line-height: 14.8px;
+   }
+   .endeavourTagline{
+       font-size: 7.2px;
+       line-height: 6.4px;
+   }
+   /*-- INTRODUCTION --*/
+
+   section.blogReference{
+       height: 25.6px;
+   }
+   .blogContainerText p{
+       font-size: 4.8px;
+       line-height: 5.8px;
+   }
+   .blogButtonContainer .blogButton{
+       font-size: 2.8px;
+   }
+
+
+
+   section.aboutReference{
+       height: 76.8px;
+   }
+
+   section.domainReference{
+       height: 76.8px;
+   }
+
+   /* CARDS */
+
+   section.cardsArray{
+       height: 153.6px;
+   }
+
+   .cardText p.cardMainText{
+       font-size: 9.6px;
+       line-height: 11px;
+   }
+   .cardText .cardTagText{
+       font-size: 3.2px;
+       line-height: 3.6px;
+   }
+
+   .partTwo p{
+       font-size: 7.2px;
+       line-height: 4.3px;
+   }
+   .partTwo .taglineCard{
+       font-size: 2.4px;
+       line-height: 2.8px;
+   }
+   .buttonCardContainer .buttonCard{
+       font-size: 2.4px;
+   }
+
+   section.researchReference{
+       height: 76.8px;
+   }
+   /* FOOTER */
+   section.footer{
+       height: 83.2px;
+   }
+   .connectionFooterTwo .footerMainText{
+       font-size: 5.2px;
+       line-height: 6px;
+   }
+   .connectionFooterTwo .footerTagText{
+       font-size: 3.6px;
+       line-height: 10.8px;
+   }
+   .connectionFooterTwo .footerSocialIcons{
+       font-size: 4px;
+   }
+   table.menuFooterContainer tr th,td{
+       font-size: 3.6px;
+       line-height: 10.8px;
+   }
+   /* FOOTER */
+}
