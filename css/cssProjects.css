@@ -164,7 +164,7 @@ section.raceDrone{
     width: 50%;
     height: 100%;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     
 }
@@ -179,7 +179,7 @@ section.raceDrone{
     height: 45%;
     width: 85%;
     display: flex;
-    justify-content: left;
+    justify-content: right;
     align-items: center;
     flex-direction: column;
 }
@@ -437,8 +437,16 @@ table.menuFooterContainer tr th,td{
 
 /* FOOTER SECTION */
 
-
-
+.flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexLeftCenter{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
 
 
 /*768px < Viewport < 1024px,
@@ -666,8 +674,15 @@ table.menuFooterContainer tr th,td{
     .topNav{
         height: 25px;
     }
+
+    .topNav .emptySpace25{
+        width: 12.5%;
+    }
+    .navArray{
+        width: 75%;
+    }
     .topNav ul li{
-        font-size: 6px;
+        font-size: 8px;
     }
     .topNav .emptySpace25 .endeavourLogo{
         width: 25px;
@@ -696,21 +711,27 @@ table.menuFooterContainer tr th,td{
         height: 16px;
     }
     .contentNavigation .navigationArray{
-        font-size: 6px;
-        line-height: 14.25px;
+        width: 90%;
+        font-size: 8px; /* 6px */
+        line-height: 8px;
     }
 
     /* CONTENT */
     section.raceDrone{
         height: 181.5px;
     }
+    .raceDroneText .raceDroneTextContainer{
+        width: 90%;
+        height: 90%;
+        background-color: #fff;
+    }
     .raceDroneTextContainer .raceTitle{
         font-size: 9px;
         line-height: 4.5px;
     }
     .raceDroneTextContainer .raceDescription{
-        font-size: 3.5px;
-    line-height: 6.5px;
+        font-size: 7px;
+        line-height: 9.25px;
     }
 
     /* CONTENT DELIVERY DRONE*/
@@ -722,7 +743,7 @@ table.menuFooterContainer tr th,td{
         line-height: 4.5px;
     }
     .deliveryDroneTextContainer .deliveryDescription{
-        font-size: 3.5px;
+        font-size: 5.25px; /* 3.5*/
         line-height: 6.5px;
     }
 
@@ -730,13 +751,18 @@ table.menuFooterContainer tr th,td{
     section.rcPlane{
         height: 181.5px;
     }
+    .rcPlaneText .rcPlaneTextContainer{
+        height: 90%;
+        width: 90%;
+        background-color: #fff;
+    }
     .rcPlaneTextContainer .rcPlaneTitle{
         font-size: 9px;
         line-height: 4.5px;
     }
     .rcPlaneTextContainer .rcPlaneDescription{
-        font-size: 3.5px;
-        line-height: 6.5px;
+        font-size: 7px;
+        line-height: 9.25px;
     }
 
     /* FOOTER */
@@ -744,19 +770,25 @@ table.menuFooterContainer tr th,td{
         height: 104px;
     }
     .connectionFooterTwo .footerMainText{
-        font-size: 6.5px;
-        line-height: 7.5px;
+        font-size: 9.75px;
+        line-height: 10.75px;
     }
     .connectionFooterTwo .footerTagText{
-        font-size: 4.5px;
-        line-height: 6.75px;
+        font-size: 6.75px;
+        line-height: 7.75px;
     }
     .connectionFooterTwo .footerSocialIcons{
-        font-size: 5px;
+        font-size: 7.5px;
+        line-height: 8.5px;
+    }
+    .menuFooter .menuFooterContainer{
+        width: 90%;
+        height: 80%;
     }
     table.menuFooterContainer tr th,td{
-        font-size: 4.5px;
-        line-height: 6.75px;
+        color: #fff;
+        font-size: 5.75px;
+        line-height: 5.75px;
     }
     /* FOOTER */
 
