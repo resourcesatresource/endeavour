@@ -118,8 +118,8 @@ ul li{
 /* CONTENT NAVIGATION */
 section.contentNavigation{
     width: 100%;
-    height: 64px; /* Change */
-    background: #fff;
+    height: 128px; /* Change */
+    background-color: #fff;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -176,12 +176,13 @@ section.raceDrone{
     background-size: contain;
 }
 .raceDroneText .raceDroneTextContainer{
-    height: 45%;
-    width: 85%;
+    height: 60%;
+    width: 70%;
     display: flex;
     justify-content: right;
     align-items: center;
     flex-direction: column;
+    
 }
 .raceDroneTextContainer .raceTitle{
     width: 100%;
@@ -192,7 +193,6 @@ section.raceDrone{
     font-size: 36px;
     line-height: 18px;
     /* identical to box height, or 50% */
-
 
     color: #CD0000;
 }
@@ -278,7 +278,7 @@ section.deliveryDrone{
 /* DELIVERY DRONE */
 section.rcPlane{
     width: 100%;
-    height: 484px;
+    height: 726px;
     background-color: #ffffff;
 
     display: flex;
@@ -305,8 +305,8 @@ section.rcPlane{
 }
 
 .rcPlaneText .rcPlaneTextContainer{
-    height: 45%;
-    width: 85%;
+    height: 60%;
+    width: 70%;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -408,6 +408,7 @@ color: #FFFFFF;
 .footer .menuFooter{
     width: 55%;
     height: 100%;
+    color: #FFFFFF;
     background: #000;
     display: flex;
     align-items: center;
