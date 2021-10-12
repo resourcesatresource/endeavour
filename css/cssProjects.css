@@ -457,6 +457,12 @@ table.menuFooterContainer tr th,td{
     .topNav{
         height: 75px;
     }
+    .topNav .emptySpace25{
+        width: 15%;
+    }
+    .navArray{
+        width: 70%;
+    }
     .topNav ul li{
         font-size: 18px;
     }
@@ -476,19 +482,18 @@ table.menuFooterContainer tr th,td{
     .endeavourText{
         font-size: 48px;
         line-height: 55.5px;
-
-        letter-spacing: 0.795em;
-
-        margin-right: -0.795em;
-        text-align:right;
+        letter-spacing: 0.6em;
+        margin-right: -0.6em;
     }
     .endeavourTagline{
-        font-size: 27px;
-        line-height: 24px;
+        font-size: 24px;
+        line-height: 24.5px;
+        letter-spacing: 0.2em;
+        margin-right: -0.2em;
     }
 
     /* CONTENT NAVIGATION */
-    .contentNavigation{
+    section.contentNavigation{
         height: 96px;
     }
     .contentNavigation .navigationArray{
@@ -597,7 +602,7 @@ table.menuFooterContainer tr th,td{
     }
 
     /* CONTENT NAVIGATION */
-    .contentNavigation{
+    section.contentNavigation{
         height: 64px;
     }
     .contentNavigation .navigationArray{
@@ -708,13 +713,13 @@ table.menuFooterContainer tr th,td{
     }
 
     /* CONTENT NAVIGATION */
-    .contentNavigation{
+    section.contentNavigation{
         height: 32px;
     }
     .contentNavigation .navigationArray{
         width: 90%;
         font-size: 8px; /* 6px */
-        line-height: 8px;
+        line-height: 8.5px;
     }
 
     /* CONTENT */
@@ -792,5 +797,4 @@ table.menuFooterContainer tr th,td{
         line-height: 5.75px;
     }
     /* FOOTER */
-
 }
