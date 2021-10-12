@@ -25,6 +25,7 @@
     margin: 0;
 }
 
+/* NAVIGATION */
 .topNav{
     width: 100%;
     height: 100px;
@@ -34,7 +35,7 @@
     align-items: center;
 }
 .topNav .emptySpace25{
-    width: 25%;
+    width: 15%;
     height: 100%;
 }
 .endeavourLogo{
@@ -52,7 +53,10 @@
 .topNav ul{
     list-style: none;
 }
-
+.navComponent a{
+    text-decoration: none;
+    color: #A00000;
+}
 ul li{
     font-family: Montserrat;
     font-style: normal;
@@ -63,18 +67,19 @@ ul li{
 
 }
 .navArray{
-    width: 50%;
+    width: 70%;
     height: 100%;
     display: flex;
     justify-content:space-between;
     align-items: center;
-    line-height: 100px;
 
 }
-/*-- NAVIGATION --*/
+/* NAVIGATION */
+
+/* INTRODUCTION */
 .intro{
     width: 100%;
-    height: 1024px;
+    height: 726px;
     background: url(../images/introBackground.webp);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -96,7 +101,7 @@ ul li{
 
     margin-right: -0.795em;
     text-align:right;
-} 
+}
 .endeavourTagline{
     font-family: DESIGNER;
     font-style: normal;
@@ -126,12 +131,15 @@ section.blogReference{
 
 .blogReference .blogReferenceContainer{
     width: 80%;
-    height: 50%;
+    height: 80%;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .blogReferenceContainer .blogContainerText{
     width: 60%;
     height: 100%;
+    
     color: #FFFFFF;
     
 }
@@ -143,6 +151,9 @@ section.blogReference{
     font-weight: normal;
     font-size: 24px;
     line-height: 29px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 .blogReferenceContainer .blogButtonContainer{
 width:40%;
@@ -287,27 +298,15 @@ section.cardsArray{
     
 }
 .cardTable tr td{
-    width: calc(100/3%);
+    width: 33%;
     height: 100%;
     
 }
-/* .cardContainer td{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-} */
-/* .cardContainer::-webkit-scrollbar{
-    width: 0;
-    height: 0;
-} */
 .card1{
     height: 80%;
     width: 80%;
     background-color: #fff;
-    /* min-width: 250px; */
     background-color: #444;
-    /* text-align: center; */
     margin: auto;
     border-radius: 10px;
     background: url(../images/qqart1.jpg);
@@ -358,10 +357,6 @@ section.cardsArray{
 .card3{
     height: 80%;
     width: 80%;
-    background-color: #fff;
-    /* min-width: 250px; */
-    background-color: #444;
-    /* text-align: center; */
     margin: auto;
     border-radius: 10px;
     background: url(../images/dji-mavic-mini.jpg);
@@ -408,14 +403,15 @@ section.cardsArray{
     height: 25%;
 }
 .partTwo p{
-font-family: Smile and Wave;
-font-style: normal;
-font-weight: normal;
-font-size: 36px;
-line-height: 41px;
-text-align: center;
-width: 100%;
-height: 30%;
+    color: #fff;
+    font-family: Smile and Wave;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 41px;
+    text-align: center;
+    width: 100%;
+    height: 30%;
 }
 .partTwo .taglineCard{
     font-family: Montserrat;
@@ -423,7 +419,7 @@ height: 30%;
     font-weight: normal;
     font-size: 12px;
     line-height: 14px;
-/* or 121% */
+    /* or 121% */
 
     text-align: center;
 
@@ -432,6 +428,7 @@ height: 30%;
     height: 30%;
 }
 .partTwo .buttonCardContainer{
+    color: #fff;
     width: 100%;
     height: 40%;
     display: flex;
@@ -502,7 +499,7 @@ section.researchReference{
 section.footer{
     /* 0 */
     width: 100%;
-    height: calc(256px + 160px);
+    height: 416px;
     background: #aaa;
 
     display: flex;
@@ -533,14 +530,14 @@ section.footer{
 }
 .connectionFooterTwo .footerMainText{
 /* 1 */
-font-family: Smile and Wave;
-font-style: normal;
-font-weight: normal;
-font-size: 26px;
-line-height: 30px;
-letter-spacing: 0.1em;
-text-align: left;
-color: #FFFFFF;
+    font-family: Smile and Wave;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #FFFFFF;
 }
 
 .connectionFooterTwo .footerTagText{
@@ -565,6 +562,7 @@ color: #FFFFFF;
 .footer .menuFooter{
     width: 55%;
     height: 100%;
+    color: #FFFFFF;
     background: #000;
     display: flex;
     align-items: center;
@@ -578,7 +576,11 @@ table.menuFooterContainer tr{
     width: 100%;
     height: 20%;
 }
-tr td,th{
+table.menuFooterContainer tr th,td{
+    font-size: 18px;
+    line-height: 27px;
+}
+.tr td,th{
     width: 25%;
     height: 20%;
     text-align: left;
@@ -587,20 +589,261 @@ tr td,th{
     color: #FFFFFF;
     
 }
+
 /* FOOTER SECTION */
 
 
 
+/*768px < Viewport < 1024px,
+3/4 of main viewport */
+@media only screen and (max-width:1024px){
+    /* NAV TEXT */
+    .topNav{
+        height: 75px;
+    }
+    .topNav .emptySpace25{
+        width: 15%;
+    }
+    .navArray{
+        width: 70%;
+    }
+    .topNav ul li{
+        font-size: 18px;
+    }
+    .topNav .emptySpace25 .endeavourLogo{
+        width: 75px;
+        height: 75px;
+        padding: 0px 37.5px;
+    }
+    /*-- NAV TEXT --*/
 
-@media only screen and (max-width:600px) {
 
-    /* ONE FOURTH */
+    /* INTRODUCTION */
+
+    .intro{
+        height: 544.5px;
+    }
+    .endeavourText{
+        font-size: 48px;
+        line-height: 55.5px;
+        letter-spacing: 0.6em;
+        margin-right: -0.6em;
+    }
+    .endeavourTagline{
+        font-size: 24px;
+        line-height: 24.5px;
+        letter-spacing: 0.2em;
+        margin-right: -0.2em;
+    }
+
+
+
+    /* CARDS SECTION */
+
+    section.cardsArray{
+        height: 576px;
+    }
+    .cardText p.cardMainText{
+        font-size: 36px;
+        line-height: 36px;
+
+    }
+    .cardText .cardTagText{
+        font-size: 16px;
+        line-height: 16.5px;
+    }
+
+
+    .partTwo p{
+        
+        font-size: 24px;
+        line-height: 25px;
+        
+    }
+    .partTwo .taglineCard{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .buttonCardContainer .buttonCard{
+        width: 60%;
+        height: 80%;
+        font-size: 12px;
+        border-radius: 6px;
+    }
+
+
+    /* CARDS SECTION */
+
+    /* FOOTER */
+    section.footer{
+        height: 312px;
+    }
+    .connectionFooterTwo .footerMainText{
+        font-size: 19.5px;
+        line-height: 22.5px;
+    }
+    .connectionFooterTwo .footerTagText{
+        font-size: 13.5px;
+        line-height: 20.25px;
+    }
+    .connectionFooterTwo .footerSocialIcons{
+        font-size: 15px;
+    }
+    table.menuFooterContainer tr th,td{
+        font-size: 13.5px;
+        line-height: 20.25px;
+    }
+    /* FOOTER */
+    
+    
+}
+
+
+
+
+@media only screen and (max-width:768px){
+    /* HALF  */
+
+   /* NAV TEXT */
+   .topNav{
+       height: 50px;
+   }
+   .topNav .emptySpace25{
+       width: 15%;
+   }
+   .topNav .navArray{
+       width: 70%;
+   }
+   .topNav ul li{
+       font-size: 12px;
+   }
+   .topNav .emptySpace25 .endeavourLogo{
+       width: 50px;
+       height: 50px;
+       padding: 0px 25px;
+   }
+   /*-- NAV TEXT --*/
+
+
+   /* INTRODUCTION */
+   
+   .intro{
+       height: 363px;
+   }
+   .endeavourText{
+       font-size: 32px;
+       line-height: 37px;
+
+       letter-spacing: 0.795em;
+   
+       margin-right: -0.795em;
+       text-align:right;
+   }
+   .endeavourTagline{
+       font-size: 18px;
+       line-height: 16px;
+   }
+   /*-- INTRODUCTION --*/
+
+   section.blogReference{
+       height: 64px;
+   }
+   .blogContainerText p{
+       font-size: 12px;
+       line-height: 14.5px;
+   }
+    
+   .blogButtonContainer .blogButton{
+        width: 40%;
+        font-size: 7px;
+        border-radius: 4px;
+   }
+
+
+
+   section.aboutReference{
+       height: 192px;
+   }
+
+   section.domainReference{
+       height: 192px;
+   }
+
+   /* CARDS */
+
+   section.cardsArray{
+       height: 384px;
+   }
+
+   .cardText p.cardMainText{
+       font-size: 24px;
+       line-height: 27.5px;
+   }
+   .cardText .cardTagText{
+       font-size: 8px;
+       line-height: 9px;
+   }
+
+   .partTwo p{
+       font-size: 18px;
+       line-height: 20.5px;
+   }
+   .partTwo .taglineCard{
+       font-size: 6px;
+       line-height: 7px;
+   }
+   .buttonCardContainer .buttonCard{
+       font-size: 6px;
+       border-radius: 4px;
+   }
+
+   
+   /* FOOTER */
+   section.footer{
+       height: 208px;
+   }
+   .connectionFooterTwo .footerMainText{
+       font-size: 13px;
+       line-height: 15px;
+   }
+   .connectionFooterTwo .footerTagText{
+       font-size: 9px;
+       line-height: 13.5px;
+   }
+   .connectionFooterTwo .footerSocialIcons{
+       font-size: 10px;
+   }
+   table.menuFooterContainer tr th,td{
+       font-size: 9px;
+       line-height: 13.5px;
+   }
+   /* FOOTER */
+   
+}
+
+
+
+
+
+
+/* Viewport less than 600px,
+1/4 of main viewport
+392px Changed to 600px*/ 
+@media only screen and (max-width:600px){
+
     /* NAV TEXT */
     .topNav{
         height: 25px;
     }
+
+    .topNav .emptySpace25{
+        width: 12.5%;
+    }
+    .navArray{
+        width: 75%;
+    }
     .topNav ul li{
-        font-size: 6px;
+        font-size: 8px;
     }
     .topNav .emptySpace25 .endeavourLogo{
         width: 25px;
@@ -618,20 +861,11 @@ tr td,th{
     .endeavourText{
         font-size: 16px;
         line-height: 18.5px;
-
-        letter-spacing: 0.795em;
-    
-        margin-right: -0.795em;
-        text-align:right;
     }
     .endeavourTagline{
         font-size: 9px;
         line-height: 8px;
     }
-    /*-- INTRODUCTION --*/
-
-
-
 
     section.blogReference{
         height: 32px;
@@ -642,6 +876,7 @@ tr td,th{
     }
     .blogButtonContainer .blogButton{
         font-size: 3.5px;
+        border-radius: 2px;
     }
 
     section.aboutReference{
@@ -668,376 +903,86 @@ tr td,th{
         line-height: 4.5px;
     }
 
-    /* Temporary */
     .card1, .card2, .card3{
+        height: 75%;
         width: 90%;
+    }
+
+    /* Temporary */
+
+    .card1 .partOne{
+        width: 100%;
+        height: 70%;
+    } 
+    .card2 .partOne{
+        width: 100%;
+        height: 70%;
+    }
+    .card3 .partOne{
+        width: 100%;
         height: 70%;
     }
 
+    .card1 .partTwo{
+        width: 100%;
+        height: 30%;
+    }
+    .card2 .partTwo{
+        width: 100%;
+        height: 30%;
+    } 
+    .card3 .partTwo{
+        width: 100%;
+        height: 30%;
+    }
+
+
+
     .partTwo p{
         font-size: 9px;
-        line-height: 10.25px;
+        line-height: 9.5px;
+        letter-spacing: 0.25em;
     }
     .partTwo .taglineCard{
-        font-size: 3px;
-        line-height: 3.5px;
-    }
-    .buttonCardContainer .buttonCard{
-        font-size: 3px;
-    }
-
-
-    /* FOOTER */
-    section.footer{
-        height: 104px;
-    }
-    .connectionFooterTwo .footerMainText{
-        font-size: 6.5px;
-        line-height: 7.5px;
-    }
-    .connectionFooterTwo .footerTagText{
         font-size: 4.5px;
-        line-height: 6.75px;
-    }
-    .connectionFooterTwo .footerSocialIcons{
-        font-size: 5px;
-    }
-    table.menuFooterContainer tr th,td{
-        font-size: 4.5px;
-        line-height: 6.75px;
-    }
-    /* FOOTER */
-    
-}
-
-@media only screen and (max-width:768px){
-     /* HALF  */
-
-    /* NAV TEXT */
-    .topNav{
-        height: 50px;
-    }
-    .topNav ul li{
-        font-size: 12px;
-    }
-    .topNav .emptySpace25 .endeavourLogo{
-        width: 50px;
-        height: 50px;
-        padding: 0px 25px;
-    }
-    /*-- NAV TEXT --*/
-
-
-    /* INTRODUCTION */
-    
-    .intro{
-        height: 363px;
-    }
-    .endeavourText{
-        font-size: 32px;
-        line-height: 37px;
-
-        letter-spacing: 0.795em;
-    
-        margin-right: -0.795em;
-        text-align:right;
-    }
-    .endeavourTagline{
-        font-size: 18px;
-        line-height: 16px;
-    }
-    /*-- INTRODUCTION --*/
-
-    section.blogReference{
-        height: 64px;
-    }
-    .blogContainerText p{
-        font-size: 12px;
-        line-height: 14.5px;
-    }
-    .blogButtonContainer .blogButton{
-        font-size: 7px;
-    }
-
-
-
-    section.aboutReference{
-        height: 192px;
-    }
-
-    section.domainReference{
-        height: 192px;
-    }
-
-    /* CARDS */
-
-    section.cardsArray{
-        height: 384px;
-    }
-
-    .cardText p.cardMainText{
-        font-size: 24px;
-        line-height: 27.5px;
-    }
-    .cardText .cardTagText{
-        font-size: 8px;
-        line-height: 9px;
-    }
-
-    .partTwo p{
-        font-size: 18px;
-        line-height: 20.5px;
-    }
-    .partTwo .taglineCard{
-        font-size: 6px;
-        line-height: 7px;
+        line-height: 5.0px;
     }
     .buttonCardContainer .buttonCard{
-        font-size: 6px;
-    }
-
-    
-    /* FOOTER */
-    section.footer{
-        height: 208px;
-    }
-    .connectionFooterTwo .footerMainText{
-        font-size: 13px;
-        line-height: 15px;
-    }
-    .connectionFooterTwo .footerTagText{
-        font-size: 9px;
-        line-height: 13.5px;
-    }
-    .connectionFooterTwo .footerSocialIcons{
-        font-size: 10px;
-    }
-    table.menuFooterContainer tr th,td{
-        font-size: 9px;
-        line-height: 13.5px;
-    }
-    /* FOOTER */
-    
-}
-
-/* @media only screen and (max-width:1000px){
-
-    .topNav ul li{
-        font-size: 18px;
-    }
-} */
-
-@media only screen and (max-width:500px){
-     /* 1/5 with font 20% height 25% */
-
-    /* NAV TEXT */
-    .topNav{
-        height: 25px;
-    }
-    .topNav ul li{
-        font-size: 4.8px;
-    }
-    .topNav .emptySpace25 .endeavourLogo{
-        width: 25px;
-        height: 25px;
-        padding: 0px 12.5px;
-    }
-    /*-- NAV TEXT --*/
-
-
-    /* INTRODUCTION */
-    
-    .intro{
-        height: 181.5px;
-    }
-    .endeavourText{
-        font-size: 12.8px;
-        line-height: 14.8px;
-    }
-    .endeavourTagline{
-        font-size: 7.2px;
-        line-height: 6.4px;
-    }
-    /*-- INTRODUCTION --*/
-
-    section.blogReference{
-        height: 32px;
-    }
-    .blogContainerText p{
-        font-size: 4.8px;
-        line-height: 5.8px;
-    }
-    .blogButtonContainer .blogButton{
-        font-size: 2.8px;
-        border-radius: 2.5px;
-    }
-
-
-
-    section.aboutReference{
-        height: 96px;
-    }
-
-    section.domainReference{
-        height: 96px;
-    }
-
-    /* CARDS */
-
-    section.cardsArray{
-        height: 192px;
-    }
-
-    .cardText p.cardMainText{
-        font-size: 9.6px;
-        line-height: 11px;
-    }
-    .cardText .cardTagText{
-        font-size: 3.2px;
-        line-height: 3.6px;
-    }
-
-    .partTwo p{
-        font-size: 7.2px;
-        line-height: 4.3px;
-    }
-    .partTwo .taglineCard{
-        font-size: 2.4px;
-        line-height: 2.8px;
-    }
-    .buttonCardContainer .buttonCard{
-        font-size: 2.4px;
+        font-size: 3px;
+        border-radius: 2px;
     }
 
     section.researchReference{
         height: 96px;
     }
 
-    
     /* FOOTER */
     section.footer{
         height: 104px;
     }
     .connectionFooterTwo .footerMainText{
-        font-size: 5.2px;
-        line-height: 6px;
+        font-size: 9.75px;
+        line-height: 10.75px;
     }
     .connectionFooterTwo .footerTagText{
-        font-size: 3.6px;
-        line-height: 10.8px;
+        font-size: 6.75px;
+        line-height: 7.75px;
     }
     .connectionFooterTwo .footerSocialIcons{
-        font-size: 4px;
+        font-size: 7.5px;
+        line-height: 8.5px;
+    }
+    .menuFooter .menuFooterContainer{
+        width: 90%;
+        height: 80%;
     }
     table.menuFooterContainer tr th,td{
-        font-size: 3.6px;
-        line-height: 10.8px;
+        color: #fff;
+        font-size: 5.75px;
+        line-height: 5.75px;
     }
     /* FOOTER */
 }
 
-@media only screen and (max-width:0px){
-    /* One fifth  */
-
-   /* NAV TEXT */
-   .topNav{
-       height: 20px;
-   }
-   .topNav ul li{
-       font-size: 4.8px;
-   }
-   .topNav .emptySpace25 .endeavourLogo{
-       width: 20px;
-       height: 20px;
-       padding: 0px 10px;
-   }
-   /*-- NAV TEXT --*/
 
 
-   /* INTRODUCTION */
-   
-   .intro{
-       height: 145.5px;
-   }
-   .endeavourText{
-       font-size: 12.8px;
-       line-height: 14.8px;
-   }
-   .endeavourTagline{
-       font-size: 7.2px;
-       line-height: 6.4px;
-   }
-   /*-- INTRODUCTION --*/
-
-   section.blogReference{
-       height: 25.6px;
-   }
-   .blogContainerText p{
-       font-size: 4.8px;
-       line-height: 5.8px;
-   }
-   .blogButtonContainer .blogButton{
-       font-size: 2.8px;
-   }
-
-
-
-   section.aboutReference{
-       height: 76.8px;
-   }
-
-   section.domainReference{
-       height: 76.8px;
-   }
-
-   /* CARDS */
-
-   section.cardsArray{
-       height: 153.6px;
-   }
-
-   .cardText p.cardMainText{
-       font-size: 9.6px;
-       line-height: 11px;
-   }
-   .cardText .cardTagText{
-       font-size: 3.2px;
-       line-height: 3.6px;
-   }
-
-   .partTwo p{
-       font-size: 7.2px;
-       line-height: 4.3px;
-   }
-   .partTwo .taglineCard{
-       font-size: 2.4px;
-       line-height: 2.8px;
-   }
-   .buttonCardContainer .buttonCard{
-       font-size: 2.4px;
-   }
-
-   section.researchReference{
-       height: 76.8px;
-   }
-   /* FOOTER */
-   section.footer{
-       height: 83.2px;
-   }
-   .connectionFooterTwo .footerMainText{
-       font-size: 5.2px;
-       line-height: 6px;
-   }
-   .connectionFooterTwo .footerTagText{
-       font-size: 3.6px;
-       line-height: 10.8px;
-   }
-   .connectionFooterTwo .footerSocialIcons{
-       font-size: 4px;
-   }
-   table.menuFooterContainer tr th,td{
-       font-size: 3.6px;
-       line-height: 10.8px;
-   }
-   /* FOOTER */
-}
