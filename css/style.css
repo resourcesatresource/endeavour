@@ -558,6 +558,7 @@ section.footer{
 .endeavourLogoFooter img{
     width: auto;
     height: 100%;
+    padding: 0px 50px;
 }
 .connectionFooter .connectionFooterTwo{
     width: 50%;
