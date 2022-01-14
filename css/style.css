@@ -43,9 +43,6 @@ a{
     height: 100%;
 }
 .endeavourLogo{
-    /* position: absolute;
-    top: 0;
-    left: 0; */
     width: 100px;
     height: 100px;
     padding: 0px 50px;
@@ -57,9 +54,22 @@ a{
 .topNav ul{
     list-style: none;
 }
+.navComponent{
+    width: 100%;
+    height: 100%;
+}
 .navComponent a{
     text-decoration: none;
     color: #A00000;
+    width: 90%;
+    height: 90%;
+}
+.navComponent a:hover{
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.15), 0 6px 20px 0 rgba(0,0,0,0.14);
+}
+.activeTopNav{
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.15), 0 6px 20px 0 rgba(0,0,0,0.14);
 }
 ul li{
     font-family: Montserrat;
@@ -70,6 +80,7 @@ ul li{
 
 
 }
+
 .navArray{
     width: 70%;
     height: 100%;
@@ -496,32 +507,6 @@ section.researchReference{
     border-top: 0.5px solid #000;
 }
 
-/* .researchReference .researchText{
-   width: 40%;
-   height: 100%;
-   
-}
-.researchReference .quadCamDrone{
-
-    width: 20%;
-    height: 100%;
-    background: url(../images/quadCamDrone.jpg);
-    background-size: 100% 100%;
-
-}
-.researchReference .warBot{
-    width: 20%;
-    height: 100%;
-    background: url(../images/quadCamDrone.jpg);
-    background-size: 100% 100%;
-}
-.researchReference .agriDrone{
-    width: 20%;
-    height: 100%;
-    background: url(../images/quadCamDrone.jpg);
-    background-size: 100% 100%;
-} */
-
 section.sponsersReference{
     width: 100%;
     height: 300px;
@@ -536,18 +521,25 @@ section.sponsersReference{
 }
 .sponsers-section{
     height: 100%;
-    width: calc(100%/3);
+    width: 25%;
     /* background-color: aqua; */
 }
 .glass{
     width:80%;
     height: 80%;
     margin: auto;
+    border-radius: 20px;
     background: linear-gradient(to right,rgba(255,255,255,0.8),rgba(255,255,255,0.6),rgba(255,255,255,0.4));
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
     }
-
+.glass:hover{
+    border-radius: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.glass > a{
+    width: 100%;
+    height: 100%;
+}
 .glass > a > img{
     width: 80%;
     height: auto;
@@ -648,6 +640,7 @@ color: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 .menuFooter .menuFooterContainer{
     width: 80%;
@@ -669,6 +662,12 @@ table.menuFooterContainer tr th,td{
     font-style: normal;
     color: #FFFFFF;
     
+}
+.contactContainer{
+    width: 80%;
+    height: 20%;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 /* FOOTER SECTION */
@@ -956,6 +955,9 @@ table.menuFooterContainer tr th,td{
         height: 25px;
         padding: 0px 12.5px;
     }
+    .activeTopNav{
+        border-radius: 0px 0px 5px 5px;
+    }
     /*-- NAV TEXT --*/
 
 
@@ -1050,6 +1052,9 @@ table.menuFooterContainer tr th,td{
     .glass{
         border-radius: 6.25px;
     }
+    .glass:hover{
+        border-radius: 6.25px;
+    }
     /* FOOTER */
     section.footer{
         height: 104px;
@@ -1068,12 +1073,18 @@ table.menuFooterContainer tr th,td{
     }
     .menuFooter .menuFooterContainer{
         width: 90%;
-        height: 80%;
+        height: 70%;
     }
     table.menuFooterContainer tr th,td{
         color: #fff;
         font-size: 5.75px;
         line-height: 5.75px;
+    }
+    .contactContainer{
+        width: 90%;
+        height: 30%;
+        font-size: 4px;
+        line-height: 5px;
     }
     /* FOOTER */
 }
