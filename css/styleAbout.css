@@ -170,7 +170,7 @@
 .write p{
   font-size: 15px;
 }
-.write .image{
+/* .write .image{
   /* width : 75%;
   margin-left: 12%;
   margin-right: 12%;
@@ -179,8 +179,8 @@
   background-color: transparent;
   border-radius: 10px;
 
-  background-image: url(""); */
-}
+  background-image: url(""); 
+} */
 .points .graphic{
   width : 15%;
   display: flex;
